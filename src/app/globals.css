@@ -69,6 +69,9 @@ body{
         &::after{
           display: none;
         }
+        &::before{
+          display: none;
+        }
       }
     }
     li.slick-active{

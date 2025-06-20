@@ -99,19 +99,26 @@ const FlashSaleSection = () => {
   };
 
   return (
-    <section className="py-10 px-5 md:px-10">
-      <div className="flex items-center justify-start mb-6">
+    <section className="mt-25">
+      <div className="flex items-end justify-start mb-10 px-[15px]">
         <div className='mr-22'>
           <div className="text-red-500 font-semibold text-[16px] slideTopText pl-9">Today’s</div>
-          <h2 className="text-2xl md:text-3xl font-bold mt-6">Flash Sales</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mt-8 tracking-wide">Flash Sales</h2>
         </div>
         <div className="flex gap-3 text-center text-sm">
-          {['Days', 'Hours', 'Minutes', 'Seconds'].map((label, idx) => {
+          {['Days', 'Hours', 'Minutes', 'Seconds'].map((label, idx, arr) => {
             const val = Object.values(timeLeft)[idx] ?? 0;
             return (
-              <div key={label}>
-                <div className="text-gray-500">{label}</div>
-                <div className="text-xl font-bold">{String(val).padStart(2, '0')}</div>
+              <div key={label} className="flex items-center gap-1">
+                <div className='mr-[7px]'>
+                  <div className="text-black text-[13px] font-medium mb-1">{label}</div>
+                  <div className="text-[32px] font-bold leading-none">
+                    {String(val).padStart(2, '0')}
+                  </div>
+                </div>
+                {idx !== arr.length - 1 && (
+                  <span className="text-red-500 text-3xl font-bold mb-[-10px]">:</span>
+                )}
               </div>
             );
           })}
@@ -120,33 +127,37 @@ const FlashSaleSection = () => {
 
       <Slider {...sliderSettings} className="product-slider">
         {sampleProducts.map((product) => (
-          <div key={product.id} className="px-3">
-            <div className="bg-[#f8f8f8] rounded-md p-6 relative">
-              <span className="absolute top-2 left-2 bg-red-500 text-white text-xs rounded px-2 py-0.5">
-                -{product.discount}%
-              </span>
-              <div className="flex justify-center">
-                <img
-                  src={product.image}
-                  alt={product.title}
-                  className="min-h-[180px] object-contain max-w-min"
-                />
-              </div>
-              <div className="flex flex-col justify-start absolute top-[12px] right-[12px] gap-2 items-center mb-2 text-gray-600 text-sm">
-                {wishlistIcon}
-                {eyeIcon}
+          <div key={product.id} className="px-[15px]">
+            <div className="relative">
+                <div className='bg-[#f8f8f8] rounded-md relative p-10'>
+                <span className="absolute top-3 left-3 bg-red-500 text-white text-[13px] rounded px-3 py-1">
+                  -{product.discount}%
+                </span>
+                <div className="flex justify-center min-h-[180px] h-full">
+                  <img
+                    src={product.image}
+                    alt={product.title}
+                    className="object-contain"
+                  />
+                </div>
+                <div className="flex flex-col justify-start absolute top-[12px] right-[12px] gap-2 items-center mb-2 text-gray-600 text-sm">
+                  {wishlistIcon}
+                  {eyeIcon}
+                </div>
               </div>
 
-              <h4 className="font-medium text-sm mt-4 mb-1">{product.title}</h4>
-              <div className="flex items-center gap-2 mb-1">
-                <span className="text-red-500 font-bold">${product.price}</span>
-                <span className="line-through text-gray-400 text-sm">${product.originalPrice}</span>
+            <div>
+              <h4 className="font-medium text-[16px] text-black font mt-4 mb-2">{product.title}</h4>
+              <div className="flex items-center gap-3 mb-2">
+                <span className="text-red-500 font-medium text-[16px]">${product.price}</span>
+                <span className="line-through text-gray-400 font-medium text-[16px]">${product.originalPrice}</span>
               </div>
-              <div className="flex items-center text-yellow-500 text-sm">
+              <div className="flex items-center text-yellow-500 text-sm gap-1">
                 {Array.from({ length: 5 }, (_, i) => (
                   <StarIcon key={i} filled={i < Math.round(product.rating)} />
                 ))}
-                <span className="text-gray-500 text-xs ml-1">({product.reviews})</span>
+                <span className="text-gray-500 text-[14px] font-semibold ml-1">({product.reviews})</span>
+              </div>
               </div>
             </div>
           </div>
