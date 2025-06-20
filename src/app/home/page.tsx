@@ -5,7 +5,9 @@ const Home = () => {
   return (
     <>
       <div className='container'>
-        <div className='banner-container max-w-[970px] mr-auto ml-auto p-10'><BannerSlider/></div>
+        <div className='banner-container max-w-[972px] mx-auto p-10'>
+          <BannerSlider/>
+        </div>
       </div>
     </>
   )

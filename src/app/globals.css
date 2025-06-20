@@ -112,6 +112,10 @@ body{
   padding: 0px;
   margin: 0px;
   letter-spacing: 1.5px;
+  transition: ease all 0.4s;
+    svg{
+      transition: ease all 0.4s;
+    }
     span{
       color: #ffffff !important;
       border-bottom: 1px solid #ffffff;
@@ -122,5 +126,12 @@ body{
       border: 0px !important;
       box-shadow: none !important;
       outline: none !important;
+    }
+    &:hover{
+      transition: ease all 0.4s;
+      svg{
+        margin-left: 8px;
+        transition: ease all 0.4s;
+      }
     }
 }
