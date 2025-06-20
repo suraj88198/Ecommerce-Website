@@ -30,3 +30,11 @@ body {
   margin: 0 auto;
   padding: 0px 15px;
 }
+
+body{
+  margin: 0px;
+  padding: 0px;
+  background: #ffffff;
+  font-size: 14px;
+  color: #000000;
+}
