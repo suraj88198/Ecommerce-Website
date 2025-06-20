@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -22,7 +23,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .container{
@@ -37,4 +38,89 @@ body{
   background: #ffffff;
   font-size: 14px;
   color: #000000;
+  font-family: "Roboto", sans-serif;
+}
+
+.font{
+  font-family: "Roboto", sans-serif;
+}
+
+.bannerMain{
+  .slick-dots{
+    gap: 10px;
+    li{
+      height: 12px;
+      width: 12px;
+      border-radius: 100%;
+      background: #000000;
+      margin: 0;
+      padding: 0px;
+      border: 2px solid #000000;
+        &::after{
+          display: none;
+        }
+      
+      button{
+        opacity: 1;
+        height: 12px;
+        width: 12px;
+        background: #ffffff;
+        opacity: 0.5;
+        &::after{
+          display: none;
+        }
+      }
+    }
+    li.slick-active{
+      height: 12px;
+      width: 12px;
+      border-radius: 100%;
+      border: 2px solid #ffffff;
+        button{
+          opacity: 1;
+          height: 12px;
+          width: 12px;
+          background: red;
+          opacity: 1;
+          &::after{
+            display: none;
+          }
+        }
+    }
+  }
+}
+
+.banner-slide{
+  position: relative;
+  margin: 0 auto;
+    .bannerContent{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 65px;
+    }
+}
+
+.btn-outline{
+  background: transparent;
+  border: 0px;
+  box-shadow: none;
+  outline: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 0px;
+  margin: 0px;
+  letter-spacing: 1.5px;
+    span{
+      color: #ffffff !important;
+      border-bottom: 1px solid #ffffff;
+      padding: 0 0 8px 0;
+    }
+      &:hover{
+      background: transparent !important;
+      border: 0px !important;
+      box-shadow: none !important;
+      outline: none !important;
+    }
 }
