@@ -113,6 +113,7 @@ body{
   margin: 0px;
   letter-spacing: 1.5px;
   transition: ease all 0.4s;
+  font-family: "Roboto", sans-serif;
     svg{
       transition: ease all 0.4s;
     }
@@ -133,5 +134,21 @@ body{
         margin-left: 8px;
         transition: ease all 0.4s;
       }
+    }
+}
+
+.slideTopText{
+  position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      bottom: 0px;
+      height: 40px;
+      width: 20px;
+      border-radius: 4px;
+      background: red;
+      margin: auto;
     }
 }
