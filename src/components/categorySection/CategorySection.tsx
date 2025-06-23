@@ -32,13 +32,13 @@ const CategorySection = () => {
   const [selected, setSelected] = useState(0);
 
   return (
-    <section className='mt-20 mb-17'>
+    <section className='mt-20 mb-17 pb-17 border-[#cccccc] border-b'>
       <div className="text-[#DB4444] font-semibold text-[16px] slideTopText pl-9">Categories</div>
       <h2 className="text-2xl md:text-3xl font-bold mt-8 tracking-wide">Browse By Category</h2>
       <Slider {...sliderSettings} className="mt-10" >
         {categories.map((cat, idx) => (
           <div key={cat.name}>
-            <button onClick={() => setSelected(idx)} className={`w-full cursor-pointer flex flex-col items-center p-6 rounded-lg border border-[#cccccc] ${selected === idx ? 'bg-[#FF5E5E] text-white border-transparent' : 'bg-white text-black'} transition`}>
+            <button onClick={() => setSelected(idx)} className={`w-full cursor-pointer flex flex-col items-center p-6 rounded-lg border border-[#cccccc] ${selected === idx ? 'bg-[#DB4444] text-white border-transparent' : 'bg-white text-black'} transition`}>
               <span className="mb-[15px]">{cat.icon}</span>
               <span className="font-medium text-[16px]">{cat.name}</span>
             </button>

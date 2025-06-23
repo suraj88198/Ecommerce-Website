@@ -5,6 +5,7 @@ import StarIcon from '../starIcon/starIcon';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { Button } from 'antd';
 
 interface Product {
   id: number;
@@ -165,9 +166,9 @@ const FlashSaleSection = () => {
       </Slider>
 
       <div className="my-10 text-center border-b-1 border-[#cccccc] pb-10">
-        <button className="bg-[#DB4444] text-white px-12 py-4 rounded hover:bg-red-600 cursor-pointer text-[16px] font-medium">
+        <Button className="btn-main">
           View All Products
-        </button>
+        </Button>
       </div>
     </section>
   );

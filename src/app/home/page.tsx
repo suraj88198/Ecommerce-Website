@@ -1,7 +1,8 @@
 import CategorySection from '@/components/categorySection/CategorySection'
 import FlashSaleSection from '@/components/flashSaleSection/FlashSaleSection'
-import BannerSlider from '@/components/slider/slider'
+import BannerSlider from '@/components/bannerslider/slider'
 import React from 'react'
+import BestSellerSection from '@/components/bestSeller/bestseller'
 
 const Home = () => {
   return (
@@ -15,6 +16,9 @@ const Home = () => {
         </div>
         <div className='categorySec'>
           <CategorySection/>
+        </div>
+        <div className='bestSellerSec'>
+          <BestSellerSection/>
         </div>
       </div>
     </>
