@@ -102,7 +102,7 @@ const FlashSaleSection = () => {
     <section className="mt-25">
       <div className="flex items-end justify-start mb-10 px-[15px]">
         <div className='mr-22'>
-          <div className="text-red-500 font-semibold text-[16px] slideTopText pl-9">Today’s</div>
+          <div className="text-[#DB4444] font-semibold text-[16px] slideTopText pl-9">Today’s</div>
           <h2 className="text-2xl md:text-3xl font-bold mt-8 tracking-wide">Flash Sales</h2>
         </div>
         <div className="flex gap-3 text-center text-sm">
@@ -117,7 +117,7 @@ const FlashSaleSection = () => {
                   </div>
                 </div>
                 {idx !== arr.length - 1 && (
-                  <span className="text-red-500 text-3xl font-bold mb-[-10px]">:</span>
+                  <span className="text-[#DB4444] text-3xl font-bold mb-[-10px]">:</span>
                 )}
               </div>
             );
@@ -130,7 +130,7 @@ const FlashSaleSection = () => {
           <div key={product.id} className="px-[15px]">
             <div className="relative">
                 <div className='bg-[#f8f8f8] rounded-md relative p-10'>
-                <span className="absolute top-3 left-3 bg-red-500 text-white text-[13px] rounded px-3 py-1">
+                <span className="absolute top-3 left-3 bg-[#DB4444] text-white text-[13px] rounded px-3 py-1">
                   -{product.discount}%
                 </span>
                 <div className="flex justify-center min-h-[180px] h-full">
@@ -149,7 +149,7 @@ const FlashSaleSection = () => {
             <div>
               <h4 className="font-medium text-[16px] text-black font mt-4 mb-2">{product.title}</h4>
               <div className="flex items-center gap-3 mb-2">
-                <span className="text-red-500 font-medium text-[16px]">${product.price}</span>
+                <span className="text-[#DB4444] font-medium text-[16px]">${product.price}</span>
                 <span className="line-through text-gray-400 font-medium text-[16px]">${product.originalPrice}</span>
               </div>
               <div className="flex items-center text-yellow-500 text-sm gap-1">
@@ -164,8 +164,8 @@ const FlashSaleSection = () => {
         ))}
       </Slider>
 
-      <div className="mt-6 text-center">
-        <button className="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600">
+      <div className="my-10 text-center border-b-1 border-[#cccccc] pb-10">
+        <button className="bg-[#DB4444] text-white px-12 py-4 rounded hover:bg-red-600 cursor-pointer text-[16px] font-medium">
           View All Products
         </button>
       </div>

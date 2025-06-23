@@ -9,7 +9,7 @@ const Home = () => {
         <div className='banner-container max-w-[972px] mx-auto p-10'>
           <BannerSlider/>
         </div>
-        <div>
+        <div className='flashSec'>
           <FlashSaleSection/>
         </div>
       </div>
