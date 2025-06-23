@@ -1,6 +1,6 @@
 import React from 'react';
 import { Carousel, Button } from 'antd';
-import { rightArrowIcon } from '@/utils/icons/icons';
+import { RightArrowIcon } from '@/utils/icons/icons';
 
 const slides = [
   {
@@ -40,7 +40,7 @@ const BannerSlider: React.FC = () => (
             {slide.subtitle.map((line, i) => (<React.Fragment key={i}>{line}<br /></React.Fragment>))}
         </h1>
         <Button className='btn-outline'>
-            {slide.buttonText}{rightArrowIcon}
+            {slide.buttonText}<RightArrowIcon/>
         </Button>
         </div>
       </div>

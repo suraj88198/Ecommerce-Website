@@ -1,5 +1,5 @@
 'use client';
-import { eyeIcon, wishlistIcon } from '@/utils/icons/icons';
+import { EyeIcon, WishlistIcon } from '@/utils/icons/icons';
 import React, { useEffect, useState } from 'react';
 import StarIcon from '../starIcon/starIcon';
 import Slider from 'react-slick';
@@ -100,7 +100,7 @@ const FlashSaleSection = () => {
 
   return (
     <section className="mt-25">
-      <div className="flex items-end justify-start mb-10 px-[15px]">
+      <div className="flex md:flex-row flex-col items-start md:items-end gap-2 md:gap-0 justify-start mb-10 px-[15px]">
         <div className='mr-22'>
           <div className="text-[#DB4444] font-semibold text-[16px] slideTopText pl-9">Today’s</div>
           <h2 className="text-2xl md:text-3xl font-bold mt-8 tracking-wide">Flash Sales</h2>
@@ -141,8 +141,8 @@ const FlashSaleSection = () => {
                   />
                 </div>
                 <div className="flex flex-col justify-start absolute top-[12px] right-[12px] gap-2 items-center mb-2 text-gray-600 text-sm">
-                  {wishlistIcon}
-                  {eyeIcon}
+                  <WishlistIcon/>
+                  <EyeIcon/>
                 </div>
               </div>
 
