@@ -206,7 +206,7 @@ const OurProductsSection = () => {
                       {product.colors.map((color, colorIdx) => (
                         <span
                           key={colorIdx}
-                          className={`w-5 h-5 rounded-full ${activeColorIdx === colorIdx ? 'outline-2 border-3 border-[#ffffff]' : 'border border-transparent w-3 h-3'}`}
+                          className={`w-5 h-5 rounded-full ${activeColorIdx === colorIdx ? 'outline-2 border-3 border-[#ffffff]' : 'border border-transparent'}`}
                           style={{ backgroundColor: color, display: 'inline-block', cursor: 'pointer' }}
                           onClick={() => setActiveColorIdx(colorIdx)}
                         />

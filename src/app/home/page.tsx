@@ -5,6 +5,7 @@ import BannerSlider from '@/components/bannerSlider/slider'
 import BestSellerSection from '@/components/bestSeller/bestseller'
 import SingleBanner from '@/components/singleBanner/SingleBanner'
 import OurProductsSection from '@/components/ourProducts/ourProducts'
+import NewArrivalSection from '@/components/newArrival/newArrival'
 
 const Home = () => {
   return (
@@ -27,6 +28,9 @@ const Home = () => {
         </div>
         <div className='ourProductsSec'>
           <OurProductsSection/>
+        </div>
+        <div className='newArrivalSec'>
+          <NewArrivalSection/>
         </div>
       </div>
     </>
