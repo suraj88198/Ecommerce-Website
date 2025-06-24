@@ -1,8 +1,10 @@
 import CategorySection from '@/components/categorySection/CategorySection'
 import FlashSaleSection from '@/components/flashSaleSection/FlashSaleSection'
-import BannerSlider from '@/components/bannerslider/slider'
 import React from 'react'
+import BannerSlider from '@/components/bannerSlider/slider'
 import BestSellerSection from '@/components/bestSeller/bestseller'
+import SingleBanner from '@/components/singleBanner/SingleBanner'
+import OurProductsSection from '@/components/ourProducts/ourProducts'
 
 const Home = () => {
   return (
@@ -19,6 +21,12 @@ const Home = () => {
         </div>
         <div className='bestSellerSec'>
           <BestSellerSection/>
+        </div>
+        <div className='singleBannerSec'>
+          <SingleBanner/>
+        </div>
+        <div className='ourProductsSec'>
+          <OurProductsSection/>
         </div>
       </div>
     </>

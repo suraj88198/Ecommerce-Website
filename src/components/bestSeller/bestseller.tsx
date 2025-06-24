@@ -59,16 +59,16 @@ const BestSellerSection = () => {
 
   return (
     <section className="mt-18 mb-30">
-      <div className="flex md:flex-row flex-col items-start md:items-end gap-2 md:gap-0 justify-start md:justify-between mb-10 px-[15px]">
+      <div className="flex sm:flex-row flex-col items-start md:items-end gap-2 md:gap-0 justify-start sm:justify-between mb-10">
         <div className='mr-22'>
           <div className="text-[#DB4444] font-semibold text-[16px] slideTopText pl-9">This Month</div>
-          <h2 className="text-2xl md:text-3xl font-bold mt-8 tracking-wide">Best Selling Products</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold mt-8 tracking-wide">Best Selling Products</h2>
         </div>
         <div><Button className='btn-main'>View All</Button>
         </div>
       </div>
 
-      <div className='grid grid-cols-4'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-6 mx-[-15px]'>
         {sampleProducts.map((product) => (
           <div key={product.id} className="px-[15px]">
             <div className="relative">

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -24,7 +25,8 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Poppins", sans-serif;
 }
 
 .container{
@@ -39,11 +41,16 @@ body{
   background: #ffffff;
   font-size: 14px;
   color: #000000;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Poppins", sans-serif;
+}
+
+.font-roboto{
   font-family: "Roboto", sans-serif;
 }
 
 .font{
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .bannerMain{
@@ -96,7 +103,6 @@ body{
 
 .banner-slide{
   position: relative;
-  margin: 0 auto;
     .bannerContent{
       position: absolute;
       top: 50%;
@@ -117,15 +123,30 @@ body{
   font-size: 16px;
   padding: 0 45px;
   margin: 0px;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.5px;
   transition: ease all 0.4s;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   &:hover{
     background: #cf2121 !important;
   }
 }
 
-
+.btn-green{
+  background: #00FF66;
+  border: 0px;
+  box-shadow: none;
+  outline: none;
+  color: #ffffff !important;
+  font-weight: 500;
+  font-size: 16px;
+  height: 56px;
+  padding: 0 45px;
+  letter-spacing: 0.5px;
+  font-family: "Poppins", sans-serif;
+  &:hover{
+    background: #00e650 !important;
+  }
+}
 
 .btn-outline{
   background: transparent;
@@ -137,9 +158,9 @@ body{
   font-size: 16px;
   padding: 0px;
   margin: 0px;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.5px;
   transition: ease all 0.4s;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
     svg{
       transition: ease all 0.4s;
     }
@@ -163,7 +184,7 @@ body{
     }
 }
 
-.categorySec{
+.categorySec, .flashSec, .ourProductsSec{
   .slick-slide > div{
       margin: 0 15px;
   }
@@ -194,6 +215,12 @@ body{
 
 }
 
+.ourProductsSec{
+  .slick-slide > div{
+      margin: 0 15px 40px 15px;
+  }
+}
+
 
 .slideTopText{
   position: relative;
@@ -211,7 +238,7 @@ body{
     }
 }
 
-.flashSec, .categorySec{
+.flashSec, .categorySec, .ourProductsSec{
   .slick-arrow{
     opacity: 1;
     background: #F5F5F5;

@@ -93,18 +93,19 @@ const FlashSaleSection = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
-      { breakpoint: 1280, settings: { slidesToShow: 3 } },
-      { breakpoint: 1024, settings: { slidesToShow: 2 } },
+      { breakpoint: 1280, settings: { slidesToShow: 4 } },
+      { breakpoint: 1024, settings: { slidesToShow: 3 } },
+      { breakpoint: 768, settings: { slidesToShow: 2 } },
       { breakpoint: 640, settings: { slidesToShow: 1 } },
     ],
   };
 
   return (
     <section className="mt-25">
-      <div className="flex md:flex-row flex-col items-start md:items-end gap-2 md:gap-0 justify-start mb-10 px-[15px]">
+      <div className="flex md:flex-row flex-col items-start md:items-end gap-2 md:gap-0 justify-start mb-10">
         <div className='mr-22'>
           <div className="text-[#DB4444] font-semibold text-[16px] slideTopText pl-9">Today’s</div>
-          <h2 className="text-2xl md:text-3xl font-bold mt-8 tracking-wide">Flash Sales</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold mt-8 tracking-wide">Flash Sales</h2>
         </div>
         <div className="flex gap-3 text-center text-sm">
           {['Days', 'Hours', 'Minutes', 'Seconds'].map((label, idx, arr) => {
@@ -128,7 +129,7 @@ const FlashSaleSection = () => {
 
       <Slider {...sliderSettings} className="product-slider">
         {sampleProducts.map((product) => (
-          <div key={product.id} className="px-[15px]">
+          <div key={product.id} className="">
             <div className="relative">
                 <div className='bg-[#f8f8f8] rounded-md relative p-10'>
                 <span className="absolute top-3 left-3 bg-[#DB4444] text-white text-[13px] rounded px-3 py-1">
