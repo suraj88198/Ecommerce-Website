@@ -8,6 +8,8 @@
   --color-red:#DB4444;
 }
 
+
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
