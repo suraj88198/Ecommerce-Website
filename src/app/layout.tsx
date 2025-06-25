@@ -4,6 +4,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Ecommerce Website",
   description: "By Suraj Kushwah",
+  icons: {
+    icon: '/favicon-e.png',
+  },
 };
 
 export default function RootLayout({
