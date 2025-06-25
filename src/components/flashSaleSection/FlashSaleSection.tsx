@@ -101,11 +101,11 @@ const FlashSaleSection = () => {
   };
 
   return (
-    <section className="mt-25">
+    <section className="mt-15 md:mt-25">
       <div className="flex md:flex-row flex-col items-start md:items-end gap-2 md:gap-0 justify-start mb-10">
         <div className='mr-22'>
           <div className="text-[#DB4444] font-semibold text-[16px] slideTopText pl-9">Today’s</div>
-          <h2 className="text-2xl md:text-3xl font-semibold mt-8 tracking-wide">Flash Sales</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold mt-4 md:mt-8 tracking-wide">Flash Sales</h2>
         </div>
         <div className="flex gap-3 text-center text-sm">
           {['Days', 'Hours', 'Minutes', 'Seconds'].map((label, idx, arr) => {
@@ -114,7 +114,7 @@ const FlashSaleSection = () => {
               <div key={label} className="flex items-center gap-1">
                 <div className='mr-[7px]'>
                   <div className="text-black text-[13px] font-medium mb-1">{label}</div>
-                  <div className="text-[32px] font-bold leading-none">
+                  <div className="text-[25px] md:text-[32px] font-bold leading-none">
                     {String(val).padStart(2, '0')}
                   </div>
                 </div>
@@ -166,7 +166,7 @@ const FlashSaleSection = () => {
         ))}
       </Slider>
 
-      <div className="my-10 text-center border-b-1 border-[#cccccc] pb-10">
+      <div className="my-8 md:my-10 text-center border-b-1 border-[#cccccc] pb-8 md:pb-10">
         <Button className="btn-main">
           View All Products
         </Button>

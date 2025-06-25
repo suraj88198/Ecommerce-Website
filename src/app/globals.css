@@ -8,8 +8,6 @@
   --color-red:#DB4444;
 }
 
-
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -114,6 +112,13 @@ body{
       top: 50%;
       transform: translateY(-50%);
       left: 65px;
+      @media (max-width: 768px) {
+        position: relative;
+        left: 0px;
+        padding: 40px 40px 50px 40px;
+        transform: none;
+        background: #000000;
+      }
     }
 }
 
@@ -167,28 +172,30 @@ body{
   letter-spacing: 0.5px;
   transition: ease all 0.4s;
   font-family: "Poppins", sans-serif;
-    svg{
-      transition: ease all 0.4s;
-    }
     span{
       color: #ffffff !important;
       border-bottom: 1px solid #ffffff;
       padding: 0 0 5px 0;
     }
-      &:hover{
+    &:hover{
       background: transparent !important;
       border: 0px !important;
       box-shadow: none !important;
       outline: none !important;
     }
-    &:hover{
-      transition: ease all 0.4s;
-      svg{
-        margin-left: 8px;
-        transition: ease all 0.4s;
-      }
-    }
 }
+
+@keyframes arrow-move {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(8px); }
+  100% { transform: translateX(0); }
+}
+
+.banner-slide .btn-outline svg, .banner-slide .btn-main svg {
+  animation: arrow-move 1.3s infinite;
+  display: inline-block;
+}
+
 
 .categorySec, .flashSec, .ourProductsSec{
   .slick-slide > div{
@@ -224,6 +231,9 @@ body{
 .ourProductsSec{
   .slick-slide > div{
       margin: 0 15px 40px 15px;
+      @media (max-width: 768px) {
+        margin: 0 15px 20px 15px;
+      }
   }
 }
 
@@ -300,29 +310,52 @@ body{
 }
 
 .newarrival-grid{
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .arrival-items{
     overflow: hidden;
     img{
       transition: ease all 0.4s;
+      @media (max-width: 768px) {
+        height: 100%;
+        object-fit: cover;
+      }
     }
     &:nth-child(1){
       grid-column: span 2 / span 2;
       grid-row: span 4 / span 4;
+        @media (max-width: 768px) {
+          grid-column: span 1 / span 1;
+          grid-row: span 1 / span 1;
+        }
     }
     &:nth-child(2){
       grid-column: span 2 / span 2;
       grid-row: span 2 / span 2;
       grid-column-start: 3;
+        @media (max-width: 768px) {
+          grid-column: span 1 / span 1;
+          grid-row: span 1 / span 1;
+        }
     }
     &:nth-child(3){
       grid-row: span 2 / span 2;
       grid-column-start: 3;
       grid-row-start: 3;
+        @media (max-width: 768px) {
+          grid-column: span 1 / span 1;
+          grid-row: span 1 / span 1;
+        }
     }
     &:nth-child(4){
       grid-row: span 2 / span 2;
       grid-column-start: 4;
       grid-row-start: 3;
+        @media (max-width: 768px) {
+          grid-column: span 1 / span 1;
+          grid-row: span 1 / span 1;
+        }
     }
     &:hover{
       .arrival-img{
@@ -436,7 +469,6 @@ body{
     }
   }
 }
-
 
 .header-searchMobile{
   input{

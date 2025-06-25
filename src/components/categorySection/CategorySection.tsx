@@ -32,9 +32,9 @@ const CategorySection = () => {
   const [selected, setSelected] = useState(0);
 
   return (
-    <section className='mt-20 mb-17 pb-17 border-[#cccccc] border-b'>
+    <section className='mt-10 md:mt-20 mb-10 md:mb-17 pb-10 md:pb-17 border-[#cccccc] border-b'>
       <div className="text-[#DB4444] font-semibold text-[16px] slideTopText pl-9">Categories</div>
-      <h2 className="text-2xl md:text-3xl font-semibold mt-8 tracking-wide">Browse By Category</h2>
+      <h2 className="text-2xl md:text-3xl font-semibold mt-4 md:mt-8 tracking-wide">Browse By Category</h2>
       <Slider {...sliderSettings} className="mt-10" >
         {categories.map((cat, idx) => (
           <div key={cat.name}>

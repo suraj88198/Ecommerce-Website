@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       <div className='container'>
-        <div className='banner-container max-w-[972px] mx-auto p-10'>
+        <div className='banner-container max-w-[972px] mx-auto p-0 md:p-10 mt-8 md:mt-0'>
           <BannerSlider/>
         </div>
         <div className='flashSec'>

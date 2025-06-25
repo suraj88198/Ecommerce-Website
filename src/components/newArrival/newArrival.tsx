@@ -67,9 +67,9 @@ const services = [
 const NewArrivalSection = () => {
 
   return (
-    <section className='mt-20'>
+    <section className='mt-10 md:mt-20'>
       <div className="text-[#DB4444] font-semibold text-[16px] slideTopText pl-9">Featured</div>
-      <h2 className="text-2xl md:text-3xl font-semibold mt-8 tracking-wide">New Arrival</h2>
+      <h2 className="text-2xl md:text-3xl font-semibold mt-4 md:mt-8 tracking-wide">New Arrival</h2>
       <div className="mt-10 grid gap-[30px] grid-cols-4 grid-rows-4 newarrival-grid">
         {newArrival.map((product) => (
           <div key={product.id} className='arrival-items rounded-md relative w-full h-full flex'>
@@ -88,7 +88,7 @@ const NewArrivalSection = () => {
         ))}
       </div>
 
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-[960px] mx-auto my-25 service-box-main'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-10 max-w-[960px] mx-auto my-10 md:my-25 service-box-main'>
         {services.map((icons) => (
             <div key={icons.id} className='service-items rounded-md relative text-center'>
                 <div className="service-img rounded-md">

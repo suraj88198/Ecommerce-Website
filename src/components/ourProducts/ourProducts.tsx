@@ -157,11 +157,11 @@ const OurProductsSection = () => {
   };
 
   return (
-    <section className="mt-25">
+    <section className="mt-12 md:mt-25">
       <div className="flex md:flex-row flex-col items-start md:items-end gap-2 md:gap-0 justify-start mb-10">
         <div className='mr-22'>
           <div className="text-[#DB4444] font-semibold text-[16px] slideTopText pl-9">Our Products</div>
-          <h2 className="text-2xl md:text-3xl font-semibold mt-8 tracking-wide">Explore Our Products</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold mt-4 md:mt-8 tracking-wide">Explore Our Products</h2>
         </div>
       </div>
 
@@ -222,7 +222,7 @@ const OurProductsSection = () => {
         })}
       </Slider>
 
-      <div className="text-center pb-10">
+      <div className="text-center pb-5 md:pb-10">
         <Button className="btn-main">
           View All Products
         </Button>

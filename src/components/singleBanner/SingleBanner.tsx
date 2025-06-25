@@ -48,14 +48,14 @@ const SingleBanner: React.FC = () => {
   return (
     <>
     {slides.map((slide, index) => (
-      <div key={index} className='banner-slide mb-14'>
+      <div key={index} className='banner-slide mb-8 md:mb-14'>
         <img src={slide.image} alt={`Banner ${index + 1}`} className='w-full h-full'/>
         <div className='bannerContent'>
         <div className='flex items-center mb-7'>
             {slide.subimage && <span><img src={slide.subimage} alt=""/></span>}
             <p className='text-[#00FF66] text-[16px] font-semibold font'>{slide.title}</p>
         </div>
-        <h1 className='font-semibold text-5xl text-white leading-15 mb-7 font'>
+        <h1 className='font-semibold text-3xl md:text-5xl text-white md:leading-15 mb-7 font'>
             {slide.subtitle.map((line, i) => (<React.Fragment key={i}>{line}<br /></React.Fragment>))}
         </h1>
 

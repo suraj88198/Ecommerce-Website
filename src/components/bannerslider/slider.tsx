@@ -32,11 +32,11 @@ const BannerSlider: React.FC = () => (
       <div key={index} className='banner-slide'>
         <img src={slide.image} alt={`Banner ${index + 1}`}/>
         <div className='bannerContent'>
-        <div className='flex items-center gap-6 mb-5'>
+        <div className='flex items-center gap-4 md:gap-6 mb-5'>
             <span><img src={slide.subimage} alt=""/></span>
-            <p className='text-white text-2xl font-normal font'>{slide.title}</p>
+            <p className='text-white text-xl md:text-2xl font-normal font'>{slide.title}</p>
         </div>
-        <h1 className='font-semibold text-5xl text-white leading-15 mb-5 font'>
+        <h1 className='font-semibold text-3xl md:text-5xl text-white md:leading-15 mb-5 font'>
             {slide.subtitle.map((line, i) => (<React.Fragment key={i}>{line}<br /></React.Fragment>))}
         </h1>
         <Button className='btn-outline'>

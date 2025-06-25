@@ -58,11 +58,11 @@ const sampleProducts: Product[] = [
 const BestSellerSection = () => {
 
   return (
-    <section className="mt-18 mb-30">
+    <section className="mt-10 md:mt-18 mb-10 md:mb-30">
       <div className="flex sm:flex-row flex-col items-start md:items-end gap-2 md:gap-0 justify-start sm:justify-between mb-10">
         <div className='mr-22'>
           <div className="text-[#DB4444] font-semibold text-[16px] slideTopText pl-9">This Month</div>
-          <h2 className="text-2xl md:text-3xl font-semibold mt-8 tracking-wide">Best Selling Products</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold mt-4 md:mt-8 tracking-wide">Best Selling Products</h2>
         </div>
         <div><Button className='btn-main'>View All</Button>
         </div>
