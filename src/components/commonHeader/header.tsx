@@ -5,7 +5,7 @@ import HeaderRight from '../headerRight/headerRight'
 
 const Header = () => {
   return (
-    <div className='header-main bg-white border-b border-[#cccccc] py-2'>
+    <div className='header-main bg-white border-b border-[#cccccc] pt-10 pb-4'>
         <div className='container'>
             <div className='header-content flex items-center justify-between'>
               <HeaderLogo/>

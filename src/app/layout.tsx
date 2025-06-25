@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "@/components/commonHeader/header";
 
 export const metadata: Metadata = {
   title: "Ecommerce Website",
@@ -17,8 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Header/>
         <div>{children}</div>
-        </body>
+      </body>
     </html>
   );
 }

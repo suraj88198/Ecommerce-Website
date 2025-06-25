@@ -1,46 +1,48 @@
-import React, { useState } from 'react';
+'use client';
+import React from 'react';
 import type { MenuProps } from 'antd';
 import { Menu } from 'antd';
+import { usePathname, useRouter } from 'next/navigation';
 
 type MenuItem = Required<MenuProps>['items'][number];
 
 const items: MenuItem[] = [
   {
     label: 'Home',
-    key: 'home',
+    key: '/',
   },
   {
     label: 'Contact',
-    key: 'contact',
+    key: '/contact',
   },
   {
     label: 'About',
-    key: 'aboutSubMenu',
-    children: [
-      {
-        type: 'group',
-        children: [
-          { label: 'Option 1', key: 'setting:1' },
-          { label: 'Option 2', key: 'setting:2' },
-        ],
-      },
-    ],
+    key: '/about',
+    // children: [
+    //   {
+    //     type: 'group',
+    //     children: [
+    //       { label: 'Company', key: '/about/company' },
+    //       { label: 'Team', key: '/about/team' },
+    //     ],
+    //   },
+    // ],
   },
   {
     label: 'Sign Up',
-    key: 'signUp',
+    key: '/signup',
   },
 ];
 
 const NavMenu: React.FC = () => {
-  const [current, setCurrent] = useState('mail');
-  
+  const pathname = usePathname();
+  const router = useRouter();
+
   const onClick: MenuProps['onClick'] = (e) => {
-    console.log('click ', e);
-    setCurrent(e.key);
+    router.push(e.key);
   };
 
-  return <Menu className='w-full headerNavMenu justify-center' onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />;
+  return <Menu className='w-full headerNavMenu justify-center' onClick={onClick} selectedKeys={[pathname]} mode="horizontal" items={items} />;
 };
 
 export default NavMenu;
