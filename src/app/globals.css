@@ -552,4 +552,19 @@ body{
       }
     }
   }
+  .footer-social-barcode{
+    a{
+      transition: ease all 0.4s;
+      &:hover{
+        svg{
+          color: #DB4444;
+          fill: #DB4444;
+          transition: ease all 0.4s;
+          path{
+            fill: #DB4444;
+          }
+        }
+      }
+    }
+  }
 }
