@@ -7,9 +7,9 @@ import FooterMenu from '../footerMenu/footerMenu'
 const Footer = () => {
   return (
     <>
-    <div className='footer-main bg-black pt-20'>
+    <div className='footer-main bg-black pt-10 md:pt-20'>
         <div className='container'>
-            <div className='footer-content-main flex gap-22 justify-between'>
+            <div className='footer-content-main flex flex-wrap gap-10 lg:gap-22 justify-between'>
                 <div className='footer-logo max-w-[220px] w-full'>
                     <Image src="/footer-logo.png" alt="logo" width={118} height={100} />
                     <h2 className='text-white text-[20px] font-medium mt-6'>Subscribe</h2>
@@ -50,9 +50,9 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-        <div className='footer-copyright mt-11 py-5 border-t border-b border-[#7b7b7b4d]'>
+        <div className='footer-copyright mt-11 py-5 border-t border-[#7b7b7b7c]'>
             <div className='container'>
-                <p className='text-[#7b7b7b4d] text-[16px] font-normal text-center'>© Copyright Rimel 2025. All right reserved</p>
+                <p className='text-[#7b7b7b7c] text-[16px] font-normal text-center'>© Copyright 2025. All right reserved</p>
             </div>
         </div>
     </div>

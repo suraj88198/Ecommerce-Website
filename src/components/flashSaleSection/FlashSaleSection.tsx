@@ -3,8 +3,6 @@ import { EyeIcon, WishlistIcon } from '@/utils/icons/icons';
 import React, { useEffect, useState } from 'react';
 import StarIcon from '../starIcon/starIcon';
 import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import { Button } from 'antd';
 
 interface Product {

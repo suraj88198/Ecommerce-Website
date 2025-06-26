@@ -512,6 +512,11 @@ body{
         opacity: 0.5;
         font-family: "Poppins", sans-serif;
       }
+      &:focus{
+        border-color: #DB4444;
+        box-shadow: none;
+        outline: none;
+      }
   }
   .news-btn{
     position: absolute;
@@ -533,6 +538,17 @@ body{
             transition: ease all 0.4s;
           }
         }
+      }
+    }
+  }
+  .footer-address{
+    p{
+      a{
+        transition: ease all 0.4s;
+          &:hover{
+            color: #DB4444;
+            transition: ease all 0.4s;
+          }
       }
     }
   }
