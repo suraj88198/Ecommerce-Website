@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Header from "@/components/commonHeader/header";
+import Footer from "@/components/commonFooter/footer";
 export const metadata: Metadata = {
   title: "Ecommerce Website",
   description: "By Suraj Kushwah",
@@ -18,7 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+      <Header/>
         <div>{children}</div>
+      <Footer/>
       </body>
     </html>
   );
