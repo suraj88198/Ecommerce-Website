@@ -29,7 +29,7 @@ const FooterMenu = () => {
       </div>
       {/* Quick Link Section */}
       <div>
-        <h2 className='text-white text-[20px] font-medium mb-6'>Quick Link</h2>
+        <h2 className='text-white text-[20px] font-medium mb-6'>Quick Links</h2>
         <ul className='p-0 m-0 list-none'>
           {quickLinks.map(link => (
             <li key={link} className='text-white text-[16px] font-normal mb-4'><a href="#">{link}</a></li>

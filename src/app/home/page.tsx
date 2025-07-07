@@ -1,6 +1,6 @@
+import React from 'react'
 import CategorySection from '@/components/categorySection/CategorySection'
 import FlashSaleSection from '@/components/flashSaleSection/FlashSaleSection'
-import React from 'react'
 import BannerSlider from '@/components/bannerslider/slider'
 import BestSellerSection from '@/components/bestSeller/bestseller'
 import SingleBanner from '@/components/singleBanner/SingleBanner'
