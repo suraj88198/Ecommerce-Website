@@ -568,3 +568,10 @@ body{
     }
   }
 }
+
+
+.outline-text {
+  transition: all 0.2s ease-in-out;
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+}

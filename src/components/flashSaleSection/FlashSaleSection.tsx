@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import StarIcon from '../starIcon/starIcon';
 import Slider from 'react-slick';
 import { Button } from 'antd';
+import Image from 'next/image';
 
 interface Product {
   id: number;
@@ -134,10 +135,12 @@ const FlashSaleSection = () => {
                   -{product.discount}%
                 </span>
                 <div className="flex justify-center min-h-[180px] h-full">
-                  <img
+                  <Image
                     src={product.image}
                     alt={product.title}
-                    className="object-contain"
+                    width={500}
+                    height={500}
+                    className="object-contain w-auto h-auto"
                   />
                 </div>
                 <div className="flex flex-col justify-start absolute top-[12px] right-[12px] gap-2 items-center mb-2 text-gray-600 text-sm">

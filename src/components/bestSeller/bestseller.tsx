@@ -3,6 +3,7 @@ import { EyeIcon, WishlistIcon } from '@/utils/icons/icons';
 import React from 'react';
 import StarIcon from '../starIcon/starIcon';
 import { Button } from 'antd';
+import Image from 'next/image';
 
 interface Product {
   id: number;
@@ -72,10 +73,12 @@ const BestSellerSection = () => {
             <div className="relative">
                 <div className='bg-[#f8f8f8] rounded-md relative p-10'>
                 <div className="flex justify-center min-h-[180px] h-full">
-                  <img
+                  <Image
                     src={product.image}
                     alt={product.title}
-                    className="object-contain"
+                    className="object-contain w-auto h-auto"
+                    width={500}
+                    height={500}
                   />
                 </div>
                 <div className="flex flex-col justify-start absolute top-[12px] right-[12px] gap-2 items-center mb-2 text-gray-600 text-sm">

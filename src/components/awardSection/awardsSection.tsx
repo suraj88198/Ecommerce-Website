@@ -1514,6 +1514,13 @@ export default function SplashCursor({
     <div className="fixed top-0 left-0 z-50 pointer-events-none w-full h-full">
       <canvas ref={canvasRef} id="fluid" className="w-screen h-screen block"></canvas>
     </div>
+    
+
+<div className="flex justify-center items-center h-auto bg-white">
+      <span className="text-[300px] font-extrabold uppercase outline-text leading-none">
+        AWARD
+      </span>
+    </div>
   </>
   );
 }

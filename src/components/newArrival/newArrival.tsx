@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from 'antd';
+import Image from 'next/image';
 
 interface Product {
     id: number;
@@ -73,8 +74,8 @@ const NewArrivalSection = () => {
       <div className="mt-10 grid gap-[30px] grid-cols-4 grid-rows-4 newarrival-grid">
         {newArrival.map((product) => (
           <div key={product.id} className='arrival-items rounded-md relative w-full h-full flex'>
-            <div className="arrival-img rounded-md w-full h-full">
-                <img className='rounded-md w-full h-full' src={product.image} alt={product.title}/>
+            <div className="arrival-img rounded-md w-full h-full flex">
+                <Image className='rounded-md w-full h-auto' src={product.image} alt={product.title} width={500} height={500}/>
             </div>
 
             <div className='absolute bottom-8 left-7 right-0 max-w-max'>
@@ -92,7 +93,7 @@ const NewArrivalSection = () => {
         {services.map((icons) => (
             <div key={icons.id} className='service-items rounded-md relative text-center'>
                 <div className="service-img rounded-md">
-                    <img className='rounded-md max-w-max mx-auto' src={icons.image} alt={icons.title}/>
+                    <Image className='rounded-md max-w-max mx-auto w-auto h-auto' src={icons.image} alt={icons.title} width={50} height={50}/>
                 </div>
 
                 <div className='mt-6'>

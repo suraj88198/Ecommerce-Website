@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { Button } from 'antd';
+import Image from 'next/image';
 
 // Slide ka interface
 interface Slide {
@@ -58,7 +59,7 @@ const SingleBanner: React.FC = () => {
     <>
       {slides.map((slide, index) => (
         <div key={index} className='banner-slide mb-8 md:mb-14'>
-          <img src={slide.image} alt={`Banner ${index + 1}`} className='w-full h-full'/>
+          <Image src={slide.image} alt={`Banner ${index + 1}`} width={500} height={300} className='w-full h-auto'/>
           <div className='bannerContent'>
             <div className='flex items-center mb-7'>
               <p className='text-[#00FF66] text-[16px] font-semibold font'>{slide.title}</p>
