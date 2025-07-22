@@ -128,7 +128,7 @@ const FlashSaleSection = () => {
 
       <Slider {...sliderSettings} className="product-slider">
         {sampleProducts.map((product) => (
-          <div key={product.id} className="">
+          <div key={product.id} className="product-grid">
             <div className="relative">
                 <div className='bg-[#f8f8f8] rounded-md relative p-10'>
                 <span className="absolute top-3 left-3 bg-[#DB4444] text-white text-[13px] rounded px-3 py-1">
@@ -147,6 +147,7 @@ const FlashSaleSection = () => {
                   <WishlistIcon/>
                   <EyeIcon/>
                 </div>
+                <div className='add-cart absolute bg-black text-white w-full left-0 right-0 text-center bottom-0 font-medium text-[16px] rounded-bl-[4px] rounded-br-[4px] py-2 opacity-0 cursor-pointer'>Add To Cart</div>
               </div>
 
             <div>
@@ -159,7 +160,7 @@ const FlashSaleSection = () => {
                 {Array.from({ length: 5 }, (_, i) => (
                   <StarIcon key={i} filled={i < Math.round(product.rating)} />
                 ))}
-                <span className="text-gray-500 text-[14px] font-semibold ml-1">({product.reviews})</span>
+                <span className="text-gray-500 text-[14px] font-semibold ml-1">({product.reviews})</span>    
               </div>
               </div>
             </div>

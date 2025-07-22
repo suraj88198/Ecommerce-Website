@@ -170,7 +170,7 @@ const OurProductsSection = () => {
         {sampleProducts.map((product, idx) => {
           const [activeColorIdx, setActiveColorIdx] = useState(0);
           return (
-            <div key={product.id + '-' + idx} className="">
+            <div key={product.id + '-' + idx} className="product-grid">
               <div className="relative">
                 <div className='bg-[#f8f8f8] rounded-md relative p-10'>
                   {product.tag && (
@@ -191,6 +191,7 @@ const OurProductsSection = () => {
                     <WishlistIcon/>
                     <EyeIcon/>
                   </div>
+                  <div className='add-cart absolute bg-black text-white w-full left-0 right-0 text-center bottom-0 font-medium text-[16px] rounded-bl-[4px] rounded-br-[4px] py-2 opacity-0 cursor-pointer'>Add To Cart</div>
                 </div>
                 <div>
                   <h4 className="font-medium text-[16px] text-black font mt-4 mb-2">{product.title}</h4>

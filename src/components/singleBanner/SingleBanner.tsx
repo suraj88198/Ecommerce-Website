@@ -78,7 +78,7 @@ const SingleBanner: React.FC = () => {
                       <div className="text-[16px] font-semibold leading-none">
                         {String(val).padStart(2, '0')}
                       </div>
-                      <div className="text-black text-[13px] font-medium">{label}</div>
+                      <div className="text-black text-[12px] font-medium">{label}</div>
                     </div>
                   </div>
                 );

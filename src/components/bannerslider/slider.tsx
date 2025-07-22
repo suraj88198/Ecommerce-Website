@@ -30,7 +30,7 @@ const slides = [
 const BannerSlider: React.FC = () => (
   <Carousel className='bannerMain' autoplay autoplaySpeed={5000} speed={1000}>
     {slides.map((slide, index) => (
-      <div key={index} className='banner-slide'>
+      <div key={index} className='banner-slide w-full'>
         <Image width={500} height={500} src={slide.image} alt={`Banner ${index + 1}`} className='w-full h-full'/>
         <div className='bannerContent'>
         <div className='flex items-center gap-4 md:gap-6 mb-5'>

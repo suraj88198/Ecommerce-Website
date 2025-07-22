@@ -1516,11 +1516,11 @@ export default function SplashCursor({
     </div>
     
 
-<div className="flex justify-center items-center h-auto bg-white">
+    {/* <div className="flex justify-center items-center h-auto bg-white">
       <span className="text-[300px] font-extrabold uppercase outline-text leading-none">
         AWARD
       </span>
-    </div>
+    </div> */}
   </>
   );
 }

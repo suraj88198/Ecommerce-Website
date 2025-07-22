@@ -122,6 +122,18 @@ body{
     }
 }
 
+.product-grid{
+  &:hover{
+    .add-cart{
+      opacity: 1;
+      transition: 0.3s ease-in all;
+    }
+  }
+  .add-cart{
+    transition: 0.3s ease-in all;
+  }
+}
+
 
 .btn-main{
   background: #DB4444;

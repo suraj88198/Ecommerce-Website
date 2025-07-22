@@ -69,7 +69,7 @@ const BestSellerSection = () => {
 
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-6 mx-[-15px]'>
         {sampleProducts.map((product) => (
-          <div key={product.id} className="px-[15px]">
+          <div key={product.id} className="px-[15px] product-grid">
             <div className="relative">
                 <div className='bg-[#f8f8f8] rounded-md relative p-10'>
                 <div className="flex justify-center min-h-[180px] h-full">
@@ -85,6 +85,7 @@ const BestSellerSection = () => {
                   <WishlistIcon/>
                   <EyeIcon/>
                 </div>
+                <div className='add-cart absolute bg-black text-white w-full left-0 right-0 text-center bottom-0 font-medium text-[16px] rounded-bl-[4px] rounded-br-[4px] py-2 opacity-0 cursor-pointer'>Add To Cart</div>
               </div>
 
             <div>

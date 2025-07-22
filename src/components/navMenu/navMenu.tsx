@@ -18,15 +18,6 @@ const items: MenuItem[] = [
   {
     label: 'About',
     key: '/about',
-    // children: [
-    //   {
-    //     type: 'group',
-    //     children: [
-    //       { label: 'Company', key: '/about/company' },
-    //       { label: 'Team', key: '/about/team' },
-    //     ],
-    //   },
-    // ],
   },
   {
     label: 'Sign Up',
@@ -41,14 +32,12 @@ const NavMenu: React.FC = () => {
 
   const onClick: MenuProps['onClick'] = (e) => {
     router.push(e.key);
-    setOpen(false); // Close menu on navigation
+    setOpen(false);
   };
 
-  // Mobile: Hamburger + menu
-  // Desktop: Only menu
   return (
     <>
-      {/* Mobile: Hamburger + menu */}
+      {/* Mobile */}
       <div className="block lg:hidden relative">
         <button
           className="p-2"
@@ -63,20 +52,21 @@ const NavMenu: React.FC = () => {
           <div className="absolute left-0 w-[calc(100vw-30px)] bg-white z-50 shadow-md mt-2">
             <Menu
               className="headerNavMenuMobile w-full justify-center"
+              selectedKeys={[String(pathname)]}
               onClick={onClick}
-              selectedKeys={[pathname]}
-              mode="vertical"
+              mode="horizontal"
               items={items}
             />
           </div>
         )}
       </div>
-      {/* Desktop: Only menu */}
+
+      {/* Desktop */}
       <div className="hidden lg:block">
         <Menu
           className="headerNavMenu w-full justify-center"
+          selectedKeys={[String(pathname)]}
           onClick={onClick}
-          selectedKeys={[pathname]}
           mode="horizontal"
           items={items}
         />
