@@ -4,6 +4,9 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Header from "@/components/commonHeader/header";
 import Footer from "@/components/commonFooter/footer";
+import AwardsSection from '@/components/awardSection/awardsSection'
+
+
 export const metadata: Metadata = {
   title: "Ecommerce Website",
   description: "By Suraj Kushwah",
@@ -18,10 +21,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html>
       <body>
       <Header/>
         <div>{children}</div>
+        <AwardsSection/>
       <Footer/>
       </body>
     </html>

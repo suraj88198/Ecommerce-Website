@@ -6,7 +6,6 @@ import BestSellerSection from '@/components/bestSeller/bestseller'
 import SingleBanner from '@/components/singleBanner/SingleBanner'
 import OurProductsSection from '@/components/ourProducts/ourProducts'
 import NewArrivalSection from '@/components/newArrival/newArrival'
-import AwardsSection from '@/components/awardSection/awardsSection'
 
 const Home = () => {
   return (
@@ -33,9 +32,7 @@ const Home = () => {
         <div className='newArrivalSec'>
           <NewArrivalSection/>
         </div>
-        <div className='awardSec'>
-          <AwardsSection/>
-        </div>
+
       </div>
     </>
   )
