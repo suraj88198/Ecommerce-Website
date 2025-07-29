@@ -3,6 +3,7 @@ import React from 'react';
 import { Button, Input, MenuProps, Space } from 'antd';
 import { CancellationsIcon, HeaderCartIcon, HeaderWishlistIcon, LogoutIcon, OrderIcon, ReviewStarIcon, UserIcon, UserIconRed } from '@/utils/icons/icons';
 import Dropdown from 'antd/es/dropdown/dropdown';
+import { useRouter } from 'next/navigation';
 
 const items: MenuProps['items'] = [
   {
@@ -37,8 +38,11 @@ const items: MenuProps['items'] = [
 ];
 
 const HeaderRight: React.FC = () => {
+
+  const router = useRouter();
+
     return (
-        <div className='header-right-container flex items-center gap-1 lg:gap-4 max-w-max justify-end w-full'>
+        <div className='header-right-container flex items-center gap-3 lg:gap-4 max-w-max justify-end w-full'>
             
             <div className='hidden lg:block w-[250px] mr-2 header-search'>
                 <Input placeholder="What are you looking for?" variant="filled" className='w-full' />
@@ -52,11 +56,13 @@ const HeaderRight: React.FC = () => {
             )} */}
 
             <div className='header-wishlist hidden lg:block'>
-                <Button><HeaderWishlistIcon/></Button>
+                <Button onClick={() => router.push('/wishlist')}>
+                  <HeaderWishlistIcon />
+                </Button>
             </div>
 
             <div className='header-cart'>
-                <Button><HeaderCartIcon/></Button>
+                <Button onClick={() => router.push('/cart')}><HeaderCartIcon/></Button>
             </div>
 
             <div className='header-account flex items-center'>

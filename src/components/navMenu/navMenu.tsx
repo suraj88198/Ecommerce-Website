@@ -51,8 +51,19 @@ const NavMenu: React.FC = () => {
 
             {/* ❤️ Wishlist Button */}
             <div className="header-wishlist mb-2">
-              <Button className='mobileWishlist flex items-center' icon={<HeaderWishlistIcon/>}>Wishlist</Button>
-            </div>
+              {/* <Button className='mobileWishlist flex items-center' icon={<HeaderWishlistIcon/>}>Wishlist</Button> */}
+            <Button
+              className="mobileWishlist flex items-center"
+              icon={<HeaderWishlistIcon />}
+              onClick={() => {
+                router.push('/wishlist');
+                setOpen(false);
+              }}
+              >
+              Wishlist
+            </Button>
+              </div>
+
 
             {/* 📄 Menu */}
             <Menu

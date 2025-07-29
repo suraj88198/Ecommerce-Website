@@ -1,5 +1,5 @@
 'use client';
-import { EyeIcon, WishlistIcon } from '@/utils/icons/icons';
+import { CartWhiteIcon, EyeIcon, WishlistIcon } from '@/utils/icons/icons';
 import StarIcon from '../starIcon/starIcon';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -191,7 +191,7 @@ const OurProductsSection = () => {
                     <WishlistIcon/>
                     <EyeIcon/>
                   </div>
-                  <div className='add-cart absolute bg-black text-white w-full left-0 right-0 text-center bottom-0 font-medium text-[16px] rounded-bl-[4px] rounded-br-[4px] py-2 opacity-0 cursor-pointer'>Add To Cart</div>
+                  <div className='add-cart flex items-center justify-center gap-2 absolute bg-black text-white w-full left-0 right-0 text-center bottom-0 font-medium text-[16px] rounded-bl-[4px] rounded-br-[4px] py-2 opacity-0 cursor-pointer'><CartWhiteIcon/>Add To Cart</div>
                 </div>
                 <div>
                   <h4 className="font-medium text-[16px] text-black font mt-4 mb-2">{product.title}</h4>

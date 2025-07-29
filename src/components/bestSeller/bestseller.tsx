@@ -1,5 +1,5 @@
 'use client';
-import { EyeIcon, WishlistIcon } from '@/utils/icons/icons';
+import { CartWhiteIcon, EyeIcon, WishlistIcon } from '@/utils/icons/icons';
 import React from 'react';
 import StarIcon from '../starIcon/starIcon';
 import { Button } from 'antd';
@@ -85,7 +85,7 @@ const BestSellerSection = () => {
                   <WishlistIcon/>
                   <EyeIcon/>
                 </div>
-                <div className='add-cart absolute bg-black text-white w-full left-0 right-0 text-center bottom-0 font-medium text-[16px] rounded-bl-[4px] rounded-br-[4px] py-2 opacity-0 cursor-pointer'>Add To Cart</div>
+                <div className='add-cart flex items-center justify-center gap-2 absolute bg-black text-white w-full left-0 right-0 text-center bottom-0 font-medium text-[16px] rounded-bl-[4px] rounded-br-[4px] py-2 opacity-0 cursor-pointer'><CartWhiteIcon/>Add To Cart</div>
               </div>
 
             <div>

@@ -23,10 +23,10 @@ export default function RootLayout({
   return (
     <html>
       <body>
-      <Header/>
-        <div>{children}</div>
-        <AwardsSection/>
-      <Footer/>
+        <Header/>
+          <div>{children}</div>
+          <AwardsSection/>
+        <Footer/>
       </body>
     </html>
   );
