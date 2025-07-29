@@ -90,8 +90,8 @@ const SignUp: React.FC<AuthPageProps> = ({ mode = 'signup' }) => {
   };
 
   return (
-    <div className="min-h-[85vh] container flex items-center justify-center">
-      <div className="flex-1 flex">
+    <div className="min-h-[90vh] container flex items-center justify-center">
+      <div className="flex-1 flex my-10">
         <div className="flex-1 flex items-center justify-center">
           <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-30">
             {/* Left Side - Illustration */}

@@ -100,7 +100,7 @@ const FlashSaleSection = () => {
   };
 
   return (
-    <section className="mt-15 md:mt-25">
+    <section className="mt-15 lg:mt-25">
       <div className="flex md:flex-row flex-col items-start md:items-end gap-2 md:gap-0 justify-start mb-10">
         <div className='mr-22'>
           <div className="text-[#DB4444] font-semibold text-[16px] slideTopText pl-9">Today’s</div>
